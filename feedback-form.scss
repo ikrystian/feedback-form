@@ -1,0 +1,86 @@
+.feedback-form {
+  box-sizing: border-box;
+  font-size: 1.2rem;
+
+  * {
+    box-sizing: border-box;
+  }
+
+  label {
+    font-weight: 500;
+  }
+
+  sup {
+    color: red;
+  }
+
+  input[type=text],
+  input[type=email],
+  textarea {
+    padding: 1rem;
+  }
+
+  button[type=submit] {
+    border: 0;
+    padding: 0.8rem;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: all 0.2s ease-in-out;
+
+    &:hover,
+    &:focus {
+      color: #fff;
+      background-color: #000;
+    }
+
+    &:disabled {
+      opacity: 0.5;
+    }
+  }
+
+  &__footer {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  &__group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+  }
+}
+
+.feedback-entries {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+
+  button {
+    border: 0;
+    text-align: left;
+    cursor: pointer;
+    padding: 0.8rem;
+
+    &:hover,
+    &:focus {
+      outline: auto;
+    }
+  }
+}
+
+.page-number {
+  min-width: 24px;
+  height: 24px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  border: 1px solid #000;
+  font-size: 0.8rem;
+
+  &:hover,
+  &:focus {
+    color: #fff;
+    background-color: #000;
+  }
+}
